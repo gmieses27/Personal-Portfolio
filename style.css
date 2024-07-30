@@ -1,0 +1,26 @@
+#header{
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: 0;
+    transform: translateY(-60px); /* Use to adjust vertical position */
+}
+
+.name{
+    font-size: 30px;
+}
+
+.description{
+    font-size: 20px;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
