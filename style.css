@@ -1,9 +1,11 @@
 #header{
+    line-height: 5px; /* Adjust relative vertical distance between Name/Description */
     text-align: center;
     vertical-align: middle;
     position: relative;
     top: 0;
-    transform: translateY(-60px); /* Use to adjust vertical position */
+    transform: translateY(-60px); /* Use to adjust vertical position from name to description */
+    color: #b17434;
 }
 
 .name{
@@ -21,6 +23,38 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url(images/background.jpg);
+    background-image: url(images/background.gif);
     background-size: cover;
+}
+
+
+.socials ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Adjust the space between individual icons */
+}
+
+.socials li {
+    display: inline;
+}
+
+.socials a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;    height: 60px; /* Adjust bordering circle size */
+    border-radius: 50%;
+    border: 2px solid #dead18; /* Border color & thickness */
+    color: #dead18; /* Icon color */
+    text-decoration: none;
+    font-size: 30px; /* Adjust icon size */
+    transition: border-color 0.3s ease; 
+    background-color: transparent;
+}
+
+.socials a:hover {
+    background-color: #555; /* Background color on hover */
 }
