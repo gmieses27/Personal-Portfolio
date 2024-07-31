@@ -58,3 +58,35 @@ body {
 .socials a:hover {
     background-color: #555; /* Background color on hover */
 }
+
+@media (max-width: 768px) {
+    #header {
+        transform: translateY(-80px); /* Adjust vertical position for smaller screens */
+    }
+    .name {
+        font-size: 20px; /* Smaller font size for portrait view */
+        margin-bottom: 15px; /* Adjust space between name and description */
+    }
+    .description {
+        font-size: 10px; /* Smaller font size for portrait view */
+        margin-bottom: 15px; /* Adjust space between description and social links */
+        line-height: 10px;
+    }
+    .socials ul {
+        gap: 15px; /* Reduce space between icons */
+    }
+    .socials a {
+        width: 50px; /* Smaller circle size */
+        height: 50px; /* Smaller circle size */
+    }
+    .socials a i {
+        font-size: 25px; /* Smaller icon size */
+        padding: 8px; /* Adjust padding */
+    }
+    body{
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+}
